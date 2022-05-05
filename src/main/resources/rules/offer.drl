@@ -1,0 +1,26 @@
+package KieRule;
+import com.unipi.ipap.springdrools.model.Order;
+
+rule "VISA"
+
+when
+orderObject: Order(cardType=="VISA" && price >= 500);
+then
+orderObject.setDiscount(10);
+end;
+
+rule "MASTERCARD"
+
+when
+orderObject: Order(cardType=="MASTERCARD" && price >= 500);
+then
+orderObject.setDiscount(15);
+end;
+
+rule "PAYPAL"
+
+when
+orderObject: Order(cardType=="PAYPAL" && price >= 500);
+then
+orderObject.setDiscount(8);
+end;
