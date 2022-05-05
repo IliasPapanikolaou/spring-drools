@@ -10,6 +10,8 @@ runs on any JVM and is available in the Maven Central repository too.
 [Documentation](https://www.drools.org/learn/documentation.html) \
 [Help](https://www.drools.org/learn/dmn.html)
 
+Example with both offer.drl file and Decision Table (offer.xls)
+
 Http Post Request Example with VISA:
 ```
 {
